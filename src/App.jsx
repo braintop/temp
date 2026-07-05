@@ -1,6 +1,9 @@
 import Counter from './Counter';
 import StatusBadge from './StatusBadge';
 import Notification from './Notification';
+import UsersList from './UsersList';
+import TaskList from './TaskList';
+import TodoApp from './TodoApp';
 function App() {
   const items = [
     <li key="1">Apple</li>,
@@ -18,6 +21,9 @@ function App() {
 
       <ol>{items}</ol>
       <ul>{fruits.map((fruit,index) => <li  key={index} style={{ color: 'red', fontWeight: 'bold' }}>{fruit}</li>)}</ul>
+      <UsersList />
+      <TaskList />
+      <TodoApp />
     </>
   )
 }
